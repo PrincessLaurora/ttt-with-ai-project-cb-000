@@ -2,8 +2,8 @@ module Players
   class Computer < Player
 
     def move(board)
-      move = nil
-
+    move = nil
+    #if computer is X start taking 5, if it's O and 5 is not taken, take 5:
     if !board.taken?(5)
     move = "5"
     #if 5 is taken and computer is O, move to 1:
@@ -62,4 +62,4 @@ end
   #combo.select{|index| !board.taken?(index+1)}.first.to_i.+(1).to_s
 #end
 
-#if computer is X start taking 5, if it's O and 5 is not taken, take 5:
+
